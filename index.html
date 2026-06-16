@@ -1,1 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SChat - SalamChat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="logo">
+                <h1>SChat</h1>
+            </div>
+            <nav>
+                <a href="#" class="nav-item active">
+                    <span>Home</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <span>Explore</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <span>Notifications</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <span>Messages</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <span>Profile</span>
+                </a>
+            </nav>
+            <button class="post-btn" id="post-btn">Post</button>
+        </div>
 
+        <!-- Main Feed -->
+        <div class="main-feed">
+            <!-- Post Creation -->
+            <div class="post-composer">
+                <div class="composer-header">
+                    <img src="https://via.placeholder.com/48" alt="Profile" class="avatar">
+                    <textarea id="post-input" placeholder="What is happening?!"></textarea>
+                </div>
+                <div class="composer-footer">
+                    <div class="char-count" id="char-count">280</div>
+                    <button id="post-submit" class="submit-btn">Post</button>
+                </div>
+            </div>
+
+            <!-- Feed -->
+            <div class="feed" id="feed">
+                <!-- Posts will be rendered here -->
+            </div>
+        </div>
+
+        <!-- Right Sidebar -->
+        <div class="right-sidebar">
+            <div class="trends">
+                <h2>Trends for you</h2>
+                <div class="trend-item">#SalamChat</div>
+                <div class="trend-item">#AfricaTech</div>
+                <div class="trend-item">#MVP</div>
+            </div>
+            <div class="who-to-follow">
+                <h2>Who to follow</h2>
+                <div class="follow-item">
+                    <img src="https://via.placeholder.com/48" alt="User">
+                    <div>
+                        <strong>Elon Musk</strong>
+                        <span>@elonmusk</span>
+                    </div>
+                    <button>Follow</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+                      </html>
